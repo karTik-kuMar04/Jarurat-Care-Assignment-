@@ -4,7 +4,21 @@ A simple and responsive **Patient Management Web Application** built using **Rea
 This app allows users to **view, search, and add patient records**, with data fetched from a **dummy API hosted on JSONBin.io**.
 
 ---
+# Web Screenshots
 
+### Home Page
+
+![home page](https://github.com/karTik-kuMar04/Jarurat-Care-Assignment-/blob/7de44855f64286b41c707ad854cf7579b1fdd562/Home_Page.png)
+
+### Patient Page
+
+![patient page](https://github.com/karTik-kuMar04/Jarurat-Care-Assignment-/blob/7de44855f64286b41c707ad854cf7579b1fdd562/Patient_Page.png)
+
+### About Page
+
+![about page](https://github.com/karTik-kuMar04/Jarurat-Care-Assignment-/blob/7de44855f64286b41c707ad854cf7579b1fdd562/About_Page.png)
+
+---
 ## Author & Live Link
 - Kartik Kumar
 - mysoulisinfinity1@gmail.com
