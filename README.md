@@ -39,18 +39,18 @@ This app allows users to **view, search, and add patient records**, with data fe
 ```bash
 git clone https://github.com/karTik-kuMar04/Jarurat-Care-Assignment-
 cd Jarurat-Care-Assignment-
-
+```
 ### 2 Install Dependencies
 ```bash
 npm install
-
-### 4 Configure API
+```
+### 3 Configure API
 const BIN_URL = "https://api.jsonbin.io/v3/b/68f1f6d143b1c97be96c98dd/latest";
 
 ### 4 Run the Development Server
 ```bash
 npm run dev
-
+```
 
 ---
 # Example Patient Data
