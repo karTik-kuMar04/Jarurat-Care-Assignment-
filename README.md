@@ -72,8 +72,9 @@ npm run dev
 
 ---
 
-# Project Structure
+## 🗂️ Project Structure
 
+```text
 src/
 ├── components/
 │   ├── AddPatientForm.tsx
@@ -86,3 +87,4 @@ src/
 │   ├── PatientsPage.tsx
 ├── App.tsx
 └── main.tsx
+```
