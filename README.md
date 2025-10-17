@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+#  Patient Management Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Patient Management Web Application** built using **React + TypeScript + Tailwind CSS**.  
+This app allows users to **view, search, and add patient records**, with data fetched from a **dummy API hosted on JSONBin.io**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Author & Live Link
+- Kartik Kumar
+- mysoulisinfinity1@gmail.com
+- Live Link -> (https://jarurat-care-assignment-five.vercel.app/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-  View all patient records  
+-  Search patients by name  
+-  Add new patients (locally in UI)  
+-  TypeScript for strong type safety  
+-  Tailwind CSS for modern responsive design  
+-  Dummy API integration using [JSONBin.io](https://jsonbin.io)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| Framework | React + TypeScript |
+| Styling | Tailwind CSS |
+| Icons | Lucide React |
+| API | JSONBin.io (mock REST API) |
+| Build Tool | Vite |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  Setup Instructions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1️ Clone the Repository
+```bash
+git clone https://github.com/karTik-kuMar04/Jarurat-Care-Assignment-
+cd Jarurat-Care-Assignment-
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2 Install Dependencies
+```bash
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 4 Configure API
+const BIN_URL = "https://api.jsonbin.io/v3/b/68f1f6d143b1c97be96c98dd/latest";
+
+### 4 Run the Development Server
+```bash
+npm run dev
+
+
+---
+# Example Patient Data
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Ravi Kumar",
+      "age": 45,
+      "contact": "9876543210",
+      "email": "ravi.kumar@example.com",
+      "address": "New Delhi, India",
+      "medical_condition": "Type 2 Diabetes",
+      "last_visit": "2025-09-28"
+    }
+  ]
+}
+
+
+---
+
+# Project Structure
+
+src/
+├── components/
+│   ├── AddPatientForm.tsx
+│   ├── PatientCard.tsx
+│   ├── PatientModal.tsx
+├── lib/
+│   ├── api.ts
+│   ├── types.ts
+├── pages/
+│   ├── PatientsPage.tsx
+├── App.tsx
+└── main.tsx
